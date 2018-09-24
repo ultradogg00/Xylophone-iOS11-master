@@ -9,11 +9,12 @@
 import UIKit
 import AVFoundation
 
-class ViewController: UIViewController{
+class ViewController: UIViewController,AVAudioPlayerDelegate{
     
-    var player : AVAudioPlayer?
+    var audioPlayer : AVAudioPlayer!
+    let soundArray = ["note1", "note2", "note3", "note4", "note5", "note6", "note7"]
     
-    override func viewDidLoad() {
+     override func viewDidLoad() {
         super.viewDidLoad()
        
     }
@@ -22,21 +23,26 @@ class ViewController: UIViewController{
 
     @IBAction func notePressed(_ sender: UIButton) {
         
-        let url = Bundle.main.url(forResource: "note1", withExtension: "wave")!
+        playSound()
     
-        do {
-            player = try AVAudioPlayer(contentsOf: url)
-            guard let player = player else { return }
-            
-            player.prepareToPlay()
-            player.play()
-        } catch let error as NSError {
-            print(error.description)
-        }
-        
     }
+        
+    func playSound(){
+        
+        let soundURL = Bundle.main.url(forResource: "note1" , withExtension: "wav")
+        
+        do{
+            audioPlayer = try AVAudioPlayer(contentsOf: soundURL!)
+        }
+        catch{
+            print(error)
+            }
+        audioPlayer.play()
+    }
+    
+}
     
   
 
-}
+
 
