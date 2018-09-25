@@ -19,7 +19,6 @@
 		63C019F31C58E4AD001F4187 /* note5.wav in Resources */ = {isa = PBXBuildFile; fileRef = 63C019EC1C58E4AD001F4187 /* note5.wav */; };
 		63C019F41C58E4AD001F4187 /* note6.wav in Resources */ = {isa = PBXBuildFile; fileRef = 63C019ED1C58E4AD001F4187 /* note6.wav */; };
 		63C019F51C58E4AD001F4187 /* note7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 63C019EE1C58E4AD001F4187 /* note7.wav */; };
-		75D229AC215AD73D00B8E868 /* readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 75D229AB215AD73D00B8E868 /* readme.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,7 +36,6 @@
 		63C019EC1C58E4AD001F4187 /* note5.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note5.wav; sourceTree = "<group>"; };
 		63C019ED1C58E4AD001F4187 /* note6.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note6.wav; sourceTree = "<group>"; };
 		63C019EE1C58E4AD001F4187 /* note7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = note7.wav; sourceTree = "<group>"; };
-		75D229AB215AD73D00B8E868 /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +66,6 @@
 		63C019BC1C58DF76001F4187 = {
 			isa = PBXGroup;
 			children = (
-				75D229AB215AD73D00B8E868 /* readme.md */,
 				63C019C71C58DF76001F4187 /* Xylophone */,
 				63C019C61C58DF76001F4187 /* Products */,
 			);
@@ -155,7 +152,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75D229AC215AD73D00B8E868 /* readme.md in Resources */,
 				63C019F41C58E4AD001F4187 /* note6.wav in Resources */,
 				63C019F31C58E4AD001F4187 /* note5.wav in Resources */,
 				63C019F11C58E4AD001F4187 /* note3.wav in Resources */,
